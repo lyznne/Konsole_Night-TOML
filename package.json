@@ -53,6 +53,13 @@
         "scopeName": "source.toml",
         "path": "./syntaxes/toml.tmLanguage.json"
       }
+    ],
+    "themes": [
+      {
+        "label": "Konsole toml",
+        "uiTheme": "vs-dark",
+        "path": "./themes/konsole toml.json"
+      }
     ]
   },
   "license": "MIT"
