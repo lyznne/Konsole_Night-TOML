@@ -1,10 +1,10 @@
 {
-  "name": "konsole-TOML",
+  "name": "konsole-toml",
   "displayName": "Konsole TOML",
   "description": "syntax hightlighting for TOML from Konsole Night Color Theme",
   "version": "1.0.0",
   "publisher": "Enoslyznne",
-  "icon": "images/banner.png",
+  "icon": "images/icon.png",
   "keywords": [
     "toml",
     "TOML",
@@ -15,7 +15,7 @@
     "new toml",
     "syntaxhighlting"
   ],
-  "author": {
+    "author": {
     "name": "Enos Lyznne",
     "url": "https://www.github.com/lyznne",
     "urls": [
@@ -30,35 +30,28 @@
   "engines": {
     "vscode": "^1.92.0"
   },
-  "categories": [
-    "Programming Languages"
-  ],
-  "contributes": {
-    "languages": [
-      {
-        "id": "toml",
-        "aliases": [
-          "TOML",
-          "toml"
-        ],
-        "extensions": [
-          "..toml"
-        ],
-        "configuration": "./language-configuration.json"
-      }
+     "categories": [
+        "Programming Languages"
     ],
-    "grammars": [
+  "contributes": {
+     "languages": [
+            {
+                "id": "toml",
+                "aliases": [
+                    "toml",
+                    "TOML"
+                ],
+                "extensions": [
+                    ".toml"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
       {
         "language": "toml",
         "scopeName": "source.toml",
         "path": "./syntaxes/toml.tmLanguage.json"
-      }
-    ],
-    "themes": [
-      {
-        "label": "Konsole toml",
-        "uiTheme": "vs-dark",
-        "path": "./themes/konsole toml.json"
       }
     ]
   },
